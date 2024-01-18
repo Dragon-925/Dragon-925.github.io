@@ -88,11 +88,11 @@ export default sidebar({
     {
       text: "MySQL",
       icon: "leaf",
-      link: "/database/MySQL",
+      link: "/数据库/MySQL",
       children:[
         {
           text: "《初始MySQL》",
-          link: "database/MySQL/初始MySQL"
+          link: "数据库/MySQL/初始MySQL"
         }
       ]
     },

@@ -27,7 +27,7 @@ export default navbar([
   {
     text: "数据库系列",
     icon: "database",
-    prefix: "/database/",
+    prefix: "/数据库/",
     children: [
       {
         text: "MySQL",
