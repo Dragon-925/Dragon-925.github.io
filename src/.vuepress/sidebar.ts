@@ -102,8 +102,8 @@ export default sidebar({
       link: "/数据库/MySQL",
       children:[
         {
-          text: "《初始MySQL》",
-          link: "数据库/MySQL/初始MySQL"
+          text: "《初识MySQL》",
+          link: "数据库/MySQL/初识MySQL"
         }
       ]
     },
