@@ -85,6 +85,17 @@ export default sidebar({
         },
       ]
     },
+    {
+      text: "MySQL",
+      icon: "leaf",
+      link: "/database/MySQL",
+      children:[
+        {
+          text: "《初始MySQL》",
+          link: "database/MySQL/初始MySQL"
+        }
+      ]
+    },
         // {
     //   text: "如何使用",
     //   icon: "laptop-code",
