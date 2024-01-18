@@ -71,6 +71,17 @@ export default sidebar({
       ]
     },
     {
+      text: "SpringMVC",
+      icon: "leaf",
+      link: "/language/MVC",
+      children:[
+        {
+          text: "《Spring MVC执行流程》",
+          link: "language/MVC/SpringMVC执行流程"
+        }
+      ]
+    },
+    {
       text: "SpringBoot",
       icon: "leaf",
       link: "/language/Boot",
