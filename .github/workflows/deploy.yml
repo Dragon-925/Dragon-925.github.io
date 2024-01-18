@@ -35,14 +35,14 @@ jobs:
                           if: steps.cache-deps.outputs.cache-hit != 'true'
                           run: npm install
 
+                        # 构建运行脚本
                         - name: Build VuePress
-                          run: |
-                                  npm run docs:build
+                          run: npm run docs:build
 
                         - name: Deploy to GitHub Pages
                           uses: JamesIves/github-pages-deploy-action@v4
                           with:
                                   # 要部署的文件夹，必填
-                                  FOLDER: .vuepress/dist
+                                  FOLDER: /.vuepress/dist
                                   # 希望部署的分支，默认gh-pages
                                   BRANCH: gh-pages
