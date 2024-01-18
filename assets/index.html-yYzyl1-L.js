@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2b29f11e","path":"/%E6%95%B0%E6%8D%AE%E5%BA%93/","title":"数据库","lang":"zh-CN","frontmatter":{"title":"数据库","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};
