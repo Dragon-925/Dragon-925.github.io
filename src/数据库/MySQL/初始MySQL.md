@@ -557,7 +557,7 @@ SELECT studentno,studentname FROM student WHERE studentno IN(
 
 > select insert('认真学习，坚持努力',1,2,'加油继续努力');
 
-![image-20220325144754945](C:\Users\Sni\AppData\Roaming\Typora\typora-user-images\image-20220325144754945.png)
+<!-- ![image-20220325144754945](C:\Users\Sni\AppData\Roaming\Typora\typora-user-images\image-20220325144754945.png) -->
 
 替换字符串，从指定位置开始替换前面指定长度
 
@@ -583,11 +583,11 @@ select replace(stu_name,'找','赵') as new_name from student where stu_name lik
 
 ### 3.日期和时间函数
 
-> SELECT CURRENT_DATE(); /_获取当前日期_/
-> SELECT CURDATE(); /_获取当前日期_/
-> SELECT NOW(); /_获取当前日期和时间_/
-> SELECT LOCALTIME(); /_获取当前日期和时间_/
-> SELECT SYSDATE(); /_获取当前日期和时间_/
+> SELECT CURRENT*DATE(); /*获取当前日期*/
+> SELECT CURDATE(); /*获取当前日期*/
+> SELECT NOW(); /*获取当前日期和时间*/
+> SELECT LOCALTIME(); /*获取当前日期和时间*/
+> SELECT SYSDATE(); /*获取当前日期和时间\_/
 
 > -- 获取年月日,时分秒
 > SELECT YEAR(NOW());
