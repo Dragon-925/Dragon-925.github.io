@@ -6,7 +6,8 @@ export default sidebar({
     {
       text: "Java",
       icon: "fa-brands fa-java",
-      link: "/language/Java",
+      // link: "/language/Java",
+      collapsible: true,
       children:[
         {
           text: "《Lambda表达式》",
@@ -46,7 +47,8 @@ export default sidebar({
     {
       text: "Spring",
       icon: "leaf",
-      link: "/language/Spring",
+      // link: "/language/Spring",
+      collapsible: true,
       children:[
         {
           text: "《Spring事务隔离级别》",
@@ -73,7 +75,8 @@ export default sidebar({
     {
       text: "SpringMVC",
       icon: "leaf",
-      link: "/language/MVC",
+      // link: "/language/MVC",
+      collapsible: true,
       children:[
         {
           text: "《Spring MVC执行流程》",
@@ -84,7 +87,8 @@ export default sidebar({
     {
       text: "SpringBoot",
       icon: "leaf",
-      link: "/language/Boot",
+      // link: "/language/Boot",
+      collapsible: true,
       children:[
         {
           text: "《自动配置》",
@@ -99,7 +103,8 @@ export default sidebar({
     {
       text: "MySQL",
       icon: "leaf",
-      link: "/数据库/MySQL",
+      // link: "/数据库/MySQL",
+      collapsible: true,
       children:[
         {
           text: "《初识MySQL》",
