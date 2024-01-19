@@ -41,6 +41,7 @@ export default navbar([
       }
     ]
   },
+  
   {
     text: "运维系列",
     icon: "server",
