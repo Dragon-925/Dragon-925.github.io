@@ -71,6 +71,17 @@ export default sidebar({
       ]
     },
     {
+      text: "SpringMVC",
+      icon: "leaf",
+      link: "/language/MVC",
+      children:[
+        {
+          text: "《Spring MVC执行流程》",
+          link: "language/MVC/SpringMVC执行流程"
+        }
+      ]
+    },
+    {
       text: "SpringBoot",
       icon: "leaf",
       link: "/language/Boot",
@@ -91,8 +102,8 @@ export default sidebar({
       link: "/数据库/MySQL",
       children:[
         {
-          text: "《初始MySQL》",
-          link: "数据库/MySQL/初始MySQL"
+          text: "《初识MySQL》",
+          link: "数据库/MySQL/初识MySQL"
         }
       ]
     },

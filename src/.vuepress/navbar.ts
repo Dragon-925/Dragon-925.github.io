@@ -21,6 +21,11 @@ export default navbar([
         text: "Spring Boot",
         icon: "leaf",
         link:"Boot",
+      },
+      {
+        text: "Spring MVC",
+        icon: "leaf",
+        link:"MVC",
       }
     ],
   },
