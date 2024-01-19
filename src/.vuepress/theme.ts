@@ -27,7 +27,8 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "",
+  footer: `<strong>Powered by VuePress. Theme by vuepress-theme-hope</strong>`,
+  
   displayFooter: true,
   // 博客相关
   blog: {
