@@ -52,6 +52,11 @@ export default navbar([
     icon: "brain",
     link: "Algorithm"
   },
+  {
+    text: "工具系列",
+    icon: "/icons/tool.svg",
+    link: "tools"
+  },
   // {
   //   text: "博文",
   //   icon: "pen-to-square",

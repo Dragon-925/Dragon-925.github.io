@@ -112,6 +112,18 @@ export default sidebar({
         }
       ]
     },
+    {
+      text: "工具系列",
+      icon: "/icons/tool.svg",
+      // link: "/数据库/MySQL",
+      collapsible: true,
+      children:[
+        {
+          text: "《工具系列》",
+          link: "tools/工具系列"
+        }
+      ]
+    },
         // {
     //   text: "如何使用",
     //   icon: "laptop-code",
