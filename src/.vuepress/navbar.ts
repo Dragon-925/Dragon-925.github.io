@@ -9,24 +9,25 @@ export default navbar([
     children:[
       {
         text: "Java",
-        icon: "fa-brands fa-java",
+        icon: "/icons/java.svg",
         link:"Java",
       },
       {
         text: "Spring",
-        icon: "leaf",
+        icon: "/icons/spring.svg",
         link:"Spring",
       },
       {
-        text: "Spring Boot",
-        icon: "leaf",
-        link:"Boot",
+        text: "Spring MVC",
+        icon: "/icons/SpringMVC.svg",
+        link:"MVC",
       },
       {
-        text: "Spring MVC",
-        icon: "leaf",
-        link:"MVC",
-      }
+        text: "Spring Boot",
+        icon: "/icons/SpringBoot.svg",
+        link:"Boot",
+      },
+
     ],
   },
   {
@@ -36,7 +37,7 @@ export default navbar([
     children: [
       {
         text: "MySQL",
-        icon: "fa-duotone fa-dolphin",
+        icon: "/icons/mysql.svg",
         link:"MySQL"
       }
     ]

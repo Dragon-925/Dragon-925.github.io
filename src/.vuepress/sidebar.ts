@@ -5,7 +5,7 @@ export default sidebar({
     "",
     {
       text: "Java",
-      icon: "fa-brands fa-java",
+      icon: "/icons/java.svg",
       // link: "/language/Java",
       collapsible: true,
       children:[
@@ -46,7 +46,7 @@ export default sidebar({
     },
     {
       text: "Spring",
-      icon: "leaf",
+      icon: "/icons/spring.svg",
       // link: "/language/Spring",
       collapsible: true,
       children:[
@@ -74,7 +74,7 @@ export default sidebar({
     },
     {
       text: "SpringMVC",
-      icon: "leaf",
+      icon: "/icons/SpringMVC.svg",
       // link: "/language/MVC",
       collapsible: true,
       children:[
@@ -86,7 +86,7 @@ export default sidebar({
     },
     {
       text: "SpringBoot",
-      icon: "leaf",
+      icon: "/icons/SpringBoot.svg",
       // link: "/language/Boot",
       collapsible: true,
       children:[
@@ -102,7 +102,7 @@ export default sidebar({
     },
     {
       text: "MySQL",
-      icon: "leaf",
+      icon: "/icons/mysql.svg",
       // link: "/数据库/MySQL",
       collapsible: true,
       children:[
