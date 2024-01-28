@@ -124,6 +124,17 @@ export default sidebar({
         }
       ]
     },
+{
+      text: "Linux",
+      icon: "server",
+      collapsible: true,
+      children:[
+        {
+          text: "《Git》",
+          link: "operation/git"
+        }
+      ]
+    },
         // {
     //   text: "如何使用",
     //   icon: "laptop-code",

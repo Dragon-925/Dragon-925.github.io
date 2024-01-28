@@ -42,11 +42,18 @@ export default navbar([
       }
     ]
   },
-  
   {
     text: "运维系列",
     icon: "server",
-    link: "Operation"
+    // link: "Operation",
+    prefix: "/operation/",
+    children: [
+      {
+        text: "Git",
+        icon: "/icons/git.svg",
+        link:"git"
+      }
+    ]
   },
   {
     text: "算法系列",
