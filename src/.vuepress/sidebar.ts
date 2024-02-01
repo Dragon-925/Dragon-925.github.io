@@ -40,8 +40,11 @@ export default sidebar({
         {
           text: "《HashMap》",
           link: "language/Java/HashMap"
+        },
+        {
+          text: "《线程池》",
+          link: "language/Java/线程池"
         }
-
       ]
     },
     {

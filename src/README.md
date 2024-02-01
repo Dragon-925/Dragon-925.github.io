@@ -5,9 +5,9 @@ icon: home
 title: 博客主页
 heroImage:
 bgImage:
-        https://pic.imgdb.cn/item/65a77ebb871b83018af708c0.png
+        # https://pic.imgdb.cn/item/65a77ebb871b83018af708c0.png
         # https://pic.imgdb.cn/item/65a7803b871b83018afbc7c6.jpg
-        # https://pic.imgdb.cn/item/65a77f61871b83018af92f33.jpg
+        https://pic.imgdb.cn/item/65a77f61871b83018af92f33.jpg
         # '',https://pic.imgdb.cn/item/65a78025871b83018afb834e.jpg,
 
 heroText: Dawson

@@ -1,9 +1,9 @@
 ---
 icon: circle-info
-cover: /assets/images/f.png
+# cover: /assets/images/f.png
 ---
 
-# 介绍页
+# 自我介绍
 
 <p> 大家好，我是Dawson。很高兴有机会向大家介绍一下自己。</p>
 
