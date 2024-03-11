@@ -88,6 +88,10 @@ export default sidebar({
         {
           text: "《Spring MVC执行流程》",
           link: "language/MVC/SpringMVC执行流程"
+        },
+        {
+          text:"《Spring MVC消息转换器》",
+          link:"language/MVC/SpringMVC消息转换器"
         }
       ]
     },
