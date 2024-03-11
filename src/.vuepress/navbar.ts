@@ -27,6 +27,11 @@ export default navbar([
         icon: "/icons/SpringBoot.svg",
         link:"Boot",
       },
+      {
+        text: "mybatis-plus",
+        icon: "/icons/mybatisplus.svg",
+        link:"MybatisPlus",
+      },
 
     ],
   },

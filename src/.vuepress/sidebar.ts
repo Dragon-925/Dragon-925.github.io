@@ -96,6 +96,17 @@ export default sidebar({
       ]
     },
     {
+      text:"MybatisPlus",
+      icon:"/icons/mybatisplus.svg",
+      collapsible: true,
+      children:[
+        {
+          text:"《MetaObjectHandler的使用》",
+          link:"/language/MybatisPlus/MetaObjectHandler"
+        }
+      ]
+    },
+    {
       text: "SpringBoot",
       icon: "/icons/SpringBoot.svg",
       // link: "/language/Boot",
