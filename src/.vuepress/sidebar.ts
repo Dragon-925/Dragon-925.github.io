@@ -44,6 +44,10 @@ export default sidebar({
         {
           text: "《线程池》",
           link: "language/Java/线程池"
+        },
+        {
+          text: "《异步编排》",
+          link: "language/Java/异步编排"
         }
       ]
     },
