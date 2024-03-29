@@ -111,6 +111,10 @@ export default sidebar({
         {
           text: "《初识》",
           link: "数据库/Elasticsearch/初识"
+        },
+        {
+          text: "《Java操作》",
+          link: "数据库/Elasticsearch/Java操作"
         }
       ]
     },
