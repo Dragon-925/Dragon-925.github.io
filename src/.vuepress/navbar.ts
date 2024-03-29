@@ -6,31 +6,26 @@ export default navbar([
     text: "语言系列",
     icon: "code",
     prefix: "/language/",
-    children:[
+    children: [
       {
         text: "Java",
         icon: "/icons/java.svg",
-        link:"Java",
+        link: "Java",
       },
       {
         text: "Spring",
         icon: "/icons/spring.svg",
-        link:"Spring",
+        link: "Spring",
       },
       {
         text: "Spring MVC",
         icon: "/icons/SpringMVC.svg",
-        link:"MVC",
+        link: "MVC",
       },
       {
         text: "Spring Boot",
         icon: "/icons/SpringBoot.svg",
-        link:"Boot",
-      },
-      {
-        text: "mybatis-plus",
-        icon: "/icons/mybatisplus.svg",
-        link:"MybatisPlus",
+        link: "Boot",
       },
 
     ],
@@ -43,7 +38,12 @@ export default navbar([
       {
         text: "MySQL",
         icon: "/icons/mysql.svg",
-        link:"MySQL"
+        link: "MySQL"
+      },
+      {
+        text: "Elasticsearch",
+        icon: "/icons/elasticsearch.svg",
+        link: "Elasticsearch"
       }
     ]
   },
@@ -56,7 +56,7 @@ export default navbar([
       {
         text: "Git",
         icon: "/icons/git.svg",
-        link:"git"
+        link: "git"
       }
     ]
   },
