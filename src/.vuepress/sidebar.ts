@@ -115,6 +115,10 @@ export default sidebar({
         {
           text: "《Java操作》",
           link: "数据库/Elasticsearch/Java操作"
+        },
+        {
+          text: "《DSL文档操作》",
+          link: "数据库/Elasticsearch/DSL文档操作"
         }
       ]
     },
