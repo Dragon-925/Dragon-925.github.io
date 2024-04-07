@@ -123,6 +123,10 @@ export default sidebar({
         {
           text: "《聚合》",
           link: "数据库/Elasticsearch/聚合"
+        },
+        {
+          text: "《自动补全》",
+          link: "数据库/Elasticsearch/自动补全"
         }
       ]
     },
