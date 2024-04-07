@@ -119,6 +119,10 @@ export default sidebar({
         {
           text: "《DSL文档操作》",
           link: "数据库/Elasticsearch/DSL文档操作"
+        },
+        {
+          text: "《聚合》",
+          link: "数据库/Elasticsearch/聚合"
         }
       ]
     },
