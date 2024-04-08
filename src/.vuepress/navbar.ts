@@ -71,7 +71,7 @@ export default navbar([
     prefix: "/middleware",
     children: [
       {
-        text: "rabbitMQ",
+        text: "",
         icon: "/icons/rabbitmq.svg",
         link: "rabbitMQ"
       }
