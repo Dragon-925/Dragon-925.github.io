@@ -66,10 +66,22 @@ export default navbar([
     link: "Algorithm"
   },
   {
-    text: "工具系列",
-    icon: "/icons/tool.svg",
-    link: "tools"
-  },
+    text: "中间件",
+    icon: "/icons/中间件.svg",
+    prefix: "/middleware",
+    children: [
+      {
+        text: "rabbitMQ",
+        icon: "/icons/rabbitmq.svg",
+        link: "rabbitMQ"
+      }
+    ]
+  }
+  // {
+  //   text: "工具系列",
+  //   icon: "/icons/tool.svg",
+  //   link: "tools"
+  // },
   // {
   //   text: "博文",
   //   icon: "pen-to-square",

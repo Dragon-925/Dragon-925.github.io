@@ -142,15 +142,26 @@ export default sidebar({
         }
       ]
     },
+    // {
+    //   text: "工具系列",
+    //   icon: "/icons/tool.svg",
+    //   // link: "/数据库/MySQL",
+    //   collapsible: true,
+    //   children: [
+    //     {
+    //       text: "《工具系列》",
+    //       link: "tools/工具系列"
+    //     }
+    //   ]
+    // },
     {
-      text: "工具系列",
-      icon: "/icons/tool.svg",
-      // link: "/数据库/MySQL",
+      text:"中间件",
+      icon: "/icons/中间件.svg",
       collapsible: true,
-      children: [
+      children:[
         {
-          text: "《工具系列》",
-          link: "tools/工具系列"
+          text:"《rabbitMQ》",
+          link:"/middleware/rabbitMQ"
         }
       ]
     },
