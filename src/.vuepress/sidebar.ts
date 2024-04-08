@@ -155,13 +155,14 @@ export default sidebar({
     //   ]
     // },
     {
-      text:"中间件",
+      text: "中间件",
       icon: "/icons/中间件.svg",
       collapsible: true,
-      children:[
+      children: [
         {
-          text:"《rabbitMQ》",
-          link:"/middleware/rabbitMQ"
+          text: "",
+          link: "/middleware/rabbitMQ",
+          icon: "/icons/rabbitmq.svg"
         }
       ]
     },
