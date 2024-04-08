@@ -163,6 +163,10 @@ export default sidebar({
           text: "",
           link: "/middleware/rabbitMQ",
           icon: "/icons/rabbitmq.svg"
+        },
+        {
+          text: "RestAPI",
+          link: "/middleware/RestAPI",
         }
       ]
     },

@@ -74,6 +74,10 @@ export default navbar([
         text: "",
         icon: "/icons/rabbitmq.svg",
         link: "rabbitMQ"
+      },
+      {
+        text: "",
+        link: "RestAPI"
       }
     ]
   }
