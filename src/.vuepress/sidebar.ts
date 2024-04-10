@@ -127,6 +127,10 @@ export default sidebar({
         {
           text: "《自动补全》",
           link: "数据库/Elasticsearch/自动补全"
+        },
+        {
+          text: "《数据同步》",
+          link: "数据库/Elasticsearch/数据同步"
         }
       ]
     },
