@@ -68,6 +68,10 @@ export default navbar([
       {
         text: "冒泡排序",
         link: "bubbleSort"
+      },
+      {
+        text: "快速排序",
+        link: "quickSort"
       }
     ]
   },

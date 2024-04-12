@@ -182,6 +182,10 @@ export default sidebar({
         {
           text: "冒泡排序",
           link: "/algorithm/bubbleSort"
+        },
+        {
+          text: "快速排序",
+          link: "/algorithm/quickSort"
         }
       ]
     },

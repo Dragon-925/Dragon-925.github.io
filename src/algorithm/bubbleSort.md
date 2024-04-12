@@ -1,5 +1,4 @@
 ---
-icon: /icons/tool.svg
 date: 2020-10-15
 category:
   - Java
