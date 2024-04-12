@@ -186,6 +186,10 @@ export default sidebar({
         {
           text: "快速排序",
           link: "/algorithm/quickSort"
+        },
+        {
+          text: "二分查找",
+          link: "/algorithm/binarySearch"
         }
       ]
     },

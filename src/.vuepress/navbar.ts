@@ -72,6 +72,10 @@ export default navbar([
       {
         text: "快速排序",
         link: "quickSort"
+      },
+      {
+        text: "二分查找",
+        link: "binarySearch"
       }
     ]
   },
