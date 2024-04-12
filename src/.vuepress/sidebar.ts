@@ -175,6 +175,17 @@ export default sidebar({
       ]
     },
     {
+      text: "算法系列",
+      icon: "brain",
+      collapsible: true,
+      children: [
+        {
+          text: "冒泡排序",
+          link: "/algorithm/bubbleSort"
+        }
+      ]
+    },
+    {
       text: "Linux",
       icon: "server",
       collapsible: true,

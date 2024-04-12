@@ -63,7 +63,13 @@ export default navbar([
   {
     text: "算法系列",
     icon: "brain",
-    link: "Algorithm"
+    prefix: "algorithm",
+    children:[
+      {
+        text:"",
+        link:"bubbleSort"
+      }
+    ]
   },
   {
     text: "中间件",
