@@ -64,10 +64,10 @@ export default navbar([
     text: "算法系列",
     icon: "brain",
     prefix: "algorithm",
-    children:[
+    children: [
       {
-        text:"",
-        link:"bubbleSort"
+        text: "冒泡排序",
+        link: "bubbleSort"
       }
     ]
   },
