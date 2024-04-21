@@ -131,3 +131,80 @@ public enum HungrySafeSingle{
 ```
 
 这种写法，拥有延迟加载特性还防止了反序列化，同时不能通过 reflection attack 来调用私有构造方法，缺点是可读性差，不存在抽象层，扩展有很大的困难
+
+## 代理模式
+
+	代理模式（Proxy Pattern）使用一个类代表另一个类的功能，代理模式创建具有现有对象的对象，以便向外界提供功能接口，代理模式属于结构型模式。
+
+> 应用举例
+
+	卖家卖车，找到中间商，交给中间商去将车辆卖出
+	买家买车找中间商买
+	在这个过程中 中间商代理卖家去卖车，而卖家和买家并没有直接交易
+
+代码举例，就是Spring AOP
+
+> 优点
+
++ 职责清晰
+
++ 高扩展性
+
+> 具体实现
+
+`被代理类`
+
+```java
+public interface Car {
+	void sale();
+}
+
+public class Saler implements Car{
+	private String carName;
+
+	public Saler(String carName){
+		this.carName = carName;
+		getCar(carName)
+	}
+
+	public void saleCar() {
+		//卖车
+	}
+
+	private void getCar(String carName){
+		//取车
+	}
+}
+```
+
+`代理类`
+
+```java
+public class SalerProxy implements Car{
+	private Saler saler;
+	private String carName;
+
+	public SalerProxy(String carName){
+		this.carName = carName;
+	}
+
+	@Override
+	public void sale(){
+		if(saler == null) {
+			saler = new Saler(carName);
+		}
+		saler.sale();
+	}
+}
+```
+
+`消费者`
+
+```java
+public class Consumer{
+	public static void main(String[] args) {
+		Car car = new SaleProxy("小米SU7");
+		car.sale();
+	}
+}
+```
