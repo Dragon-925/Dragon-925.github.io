@@ -97,8 +97,8 @@ export default navbar([
   },
   {
     text: "设计模式",
-    link: "designPatterns",
-    icon: "/icons/designPatterns.svg"
+    link: "designPattern",
+    icon: "/icons/designPattern.svg"
   }
   // {
   //   text: "工具系列",
