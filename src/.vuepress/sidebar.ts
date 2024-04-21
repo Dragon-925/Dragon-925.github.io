@@ -204,6 +204,11 @@ export default sidebar({
         }
       ]
     },
+    {
+      text: "设计模式",
+      icon: "/icons/designPatterns.svg",
+      link: "/designPatterns"
+    }
     // {
     //   text: "如何使用",
     //   icon: "laptop-code",

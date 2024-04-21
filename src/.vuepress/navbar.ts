@@ -94,6 +94,11 @@ export default navbar([
         link: "RestAPI"
       }
     ]
+  },
+  {
+    text: "设计模式",
+    link: "designPatterns",
+    icon: "/icons/designPatterns.svg"
   }
   // {
   //   text: "工具系列",
