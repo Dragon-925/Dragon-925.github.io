@@ -212,6 +212,7 @@ public class Consumer{
 ## 工厂模式
 
 	隐藏内部创建逻辑，解决接口选择问题。
+    工厂模式是为了创建单一对象
 
 `定义接口`
 
@@ -272,3 +273,151 @@ public class Consumer{
     }
 }
 ```
+
+## 抽象工厂模式
+
+    抽象工厂，专注于创建一个超级工厂，用于创建其他工厂，相互依赖的对象。
+
+`定义车辆接口`
+
+```java
+public interface Car{
+    void create();
+}
+```
+
+`实现类`
+
+```java
+public class Audi implements Car{
+    @Override
+    public void create(){
+        // 创建奥迪
+    }
+}
+
+public class Benz implements Car{
+    @Override
+    public void create(){
+        // 创建奔驰
+    }
+}
+```
+
+`定义车辆颜色接口`
+
+```java
+public interface CarColor{
+    void make();
+}
+```
+
+`定义车颜色实现类`
+
+```java
+public class Red implements CarColor{
+    void make(){
+        // 设置为红色
+    }
+}
+
+public class White implements CarColor{
+    void make(){
+        //设置为白色
+    }
+}
+```
+
+`定义抽象工厂`
+
+```java
+public abstract class AbstractFactory{
+    abstract Car car(String carName);
+    abstract CarColor carColor(String carColor);
+}
+```
+
+`创建抽象工厂`
+
+```java
+public class AbstractCar extends AbstractFactory{
+    @Override
+    public Car car(String carName){
+        if(carName == null){
+            return null;
+        }
+        if(carName.equalsIgnoreCase("Audi")){
+            return new Audi();
+        }
+        if(carName.equalsIgnoreCase("Benz")){
+            return new Benz();
+        }
+        return null;
+    }
+
+    @Override
+    public CarColor carColor(String carColor){
+        return null;
+    }
+}
+```
+
+```java
+public class AbstractCarColor extends AbstractFactory{
+    @Override
+    public Car car(String carName){
+        return null;
+    }
+
+    @Override
+    public CarColor carColor(String carColor){
+        if(carColor == null){
+            return null;
+        }
+        if(carColor.equalsIgnoreCase("Red")){
+            return new Red();
+        }
+        if(carColor.equalsIgnoreCase("White")){
+            return new White();
+        }
+    }
+}
+```
+
+`创建抽象工厂生产者`
+
+```java
+public class AbstractProducer{
+    public static AbstractFactory abstractFactory(String factoryName){
+        if(factoryName == null) {
+            return null;
+        }
+        if(factoryName.equalsIgnoreCase("Car")){
+            return new Car();
+        }
+        if(factoryName.equalsIgnoreCase("Color")){
+            return new CarColor();
+        }
+        return null;
+    }
+}
+```
+
+`消费者`
+
+```java
+public class AbstractConsumer{
+    public static void main(String[] args){
+        AbstractFactory car = AbstractProducer.abstractFactory("Car");
+        Car audi = car.car("Audi");
+        audi.create();
+
+        AbstractFactory carColor = AbstractProducer.abstractFactory("CarColor");
+        Red red = carColor.car("red");
+        red.make();
+    }
+}
+```
+    抽象工厂和工厂模式的区别：
+    工厂模式负责创建的是单一产品
+    抽象工厂模式，是将创建单一产品的工厂进行创建一个超级工厂，从而生产相互依赖的对象
