@@ -208,3 +208,67 @@ public class Consumer{
 	}
 }
 ```
+
+## 工厂模式
+
+	隐藏内部创建逻辑，解决接口选择问题。
+
+`定义接口`
+
+```java
+public interface Car {
+	void make();
+}
+```
+
+`定义实现类`
+
+```java
+public class Audi implements Car {
+    @Override
+    public void make(){
+        //创建了Audi品牌车
+    }
+}
+
+public class Benz implements Car {
+    @Override
+    public void make(){
+        //创建了Benz品牌车
+    }
+}
+```
+
+`定义工厂`
+
+```java
+public class CarFactory{
+    public Car makeCar(String carBrand){
+        if(carBrand == null){
+            return null;
+        }
+        if(carBrand.equalsIgnoreCase("Audi")){
+            return new Audi();
+        }
+        if(carBrand.equalsIgnoreCase("Benz")){
+            return new Benz();
+        }
+        return null;
+    }
+}
+```
+
+`调用工厂`
+
+```java
+public class Consumer{
+    public static void main(String[] args){
+        CarFactory factory = new CarFactory();
+        Car car = factory.makeCar("Audi");
+        car.make(); //输出结果：创建了Audi品牌车
+
+        Car car = factory.makeCar("Benz");
+        car.make(); //输出结果：创建了Benz品牌车
+    }
+}
+```
