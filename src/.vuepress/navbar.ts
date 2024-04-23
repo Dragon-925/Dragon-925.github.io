@@ -92,6 +92,11 @@ export default navbar([
       {
         text: "",
         link: "RestAPI"
+      },
+      {
+        text: "Redis",
+        icon: "/icons/Redis.svg",
+        link: "redis"
       }
     ]
   },

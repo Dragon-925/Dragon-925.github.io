@@ -171,6 +171,11 @@ export default sidebar({
         {
           text: "RestAPI",
           link: "/middleware/RestAPI",
+        },
+        {
+          text: "Redis",
+          link: "/middleware/redis",
+          icon: "/icons/Redis.svg"
         }
       ]
     },
