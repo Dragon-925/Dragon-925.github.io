@@ -57,6 +57,11 @@ export default navbar([
         text: "Git",
         icon: "/icons/git.svg",
         link: "git"
+      },
+      {
+        text: "Linux",
+        icon: "/icons/centos.svg",
+        link: "Linux"
       }
     ]
   },

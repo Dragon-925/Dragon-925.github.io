@@ -206,6 +206,10 @@ export default sidebar({
         {
           text: "《Git》",
           link: "operation/git"
+        },
+        {
+          text: "《Linux》",
+          link: "operation/Linux"
         }
       ]
     },
