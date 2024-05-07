@@ -18,7 +18,7 @@ tag:
 实际操作如图所示：
 `man ls`
 
-[![man ls](http://47.92.230.178:9090/api/v1/buckets/blog/objects/download?preview=true&prefix=bGludXgvMTcxNTA2MjcyMzQyMS5qcGc=&version_id=null)](http://47.92.230.178:9090/api/v1/buckets/blog/objects/download?preview=true&prefix=bGludXgvMTcxNTA2MjcyMzQyMS5qcGc=&version_id=null)
+[![man ls](http://47.92.230.178:9001/blog/linux/1715062723421.jpg)](http://47.92.230.178:9001/blog/linux/1715062723421.jpg)
 
 > 开关机命令
 
@@ -78,7 +78,7 @@ tag:
 
 **实际操作-永久关闭防火墙自启**
 
-  <img src="http://47.92.230.178:9090/api/v1/buckets/blog/objects/download?preview=true&prefix=bGludXgvMTcxNTA2NjA3OTY1Mi5qcGc=&version_id=null"/>
+  <img src="http://47.92.230.178:9001/blog/linux/1715066079652.jpg"/>
 
 
 > 文件目录类命令
