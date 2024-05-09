@@ -62,6 +62,11 @@ export default navbar([
         text: "Linux",
         icon: "/icons/centos.svg",
         link: "Linux"
+      },
+      {
+        text: "Docker",
+        icon: "/icons/centos.svg",
+        link: "Docker"
       }
     ]
   },
