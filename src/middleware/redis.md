@@ -142,3 +142,48 @@ Redis会单独创建(Fork)一个子进程来进行持久化，首先将数据写
 “Fork”是复制一个和当前进程相同的进程，作为原进程的子进程。
 出于安全考虑，Linux引入“==写时复制技术==”
 一般情况下，主进程和子进程会共用同一块内存，只有进程空间的各段的内容要发生变化，才会将父进程的内容复制一份给子进程。
+
+> redis.conf
+
+```bash
+repl-disable-tcp-nodelay no
+replica-priority 100
+lazyfree-lazy-eviction no
+lazyfree-lazy-expire no
+lazyfree-lazy-server-del no
+replica-lazy-flush no
+
+#注意修改这里的配置，yes开启持久化，no关闭持久化
+appendonly yes
+
+appendfilename "appendonly.aof"
+appendfsync everysec # always:立即记录 ; everysec:先存入AOF缓冲区，每隔1s将缓冲区命令写入aof文件 ; no : 先存入缓冲区，由操作系统决定何时将内容写入磁盘
+no-appendfsync-on-rewrite no
+auto-aof-rewrite-percentage 100 # 比上次文件增长百分比 触发 bgrewriteaof
+auto-aof-rewrite-min-size 64mb # 当文件体积达到 64mb执行
+aof-load-truncated yes
+aof-use-rdb-preamble yes
+lua-time-limit 5000
+slowlog-log-slower-than 10000
+slowlog-max-len 128
+latency-monitor-threshold 0
+notify-keyspace-events ""
+hash-max-ziplist-entries 512
+hash-max-ziplist-value 64
+list-max-ziplist-size -2
+list-compress-depth 0
+set-max-intset-entries 512
+zset-max-ziplist-entries 128
+zset-max-ziplist-value 64
+hll-sparse-max-bytes 3000
+stream-node-max-bytes 4096
+stream-node-max-entries 100
+activerehashing yes
+client-output-buffer-limit normal 0 0 0
+client-output-buffer-limit replica 256mb 64mb 60
+client-output-buffer-limit pubsub 32mb 8mb 60
+hz 10
+dynamic-hz yes
+aof-rewrite-incremental-fsync yes
+rdb-save-incremental-fsync yes
+```
